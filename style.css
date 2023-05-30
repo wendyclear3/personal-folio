@@ -308,7 +308,7 @@ p {
   font-size: 1rem;
   color: rgb(81, 30, 148);
 
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.45);
   background-color: rgba(255, 255, 255, 0.45);
   border-radius: 5px;
   transition: background 0.2s linear;
@@ -317,7 +317,7 @@ p {
 .textarea {
   height: 130px;
   resize: none;
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.45);
 }
 
 .input::placeholder,
@@ -429,25 +429,24 @@ p {
 
 /* JS Code */
 
-:root {
-  --success-color: rgba(83, 160, 248, 0.7);
-  --error-color: rgba(201, 89, 141, 0.4);
-}
-
 .form-control.success input {
-  background-color: var(--success-color);
+  border-color: #ffffff;
+  box-shadow: -0.2em -0.2em 2em -0.2em #ffffff;
 }
 
 .form-control.error input {
-  background-color: var(--error-color);
+  border-color: rgb(81, 30, 148);
+  box-shadow: -0.2em -0.2em 2em -0.2em rgb(81, 30, 148);
 }
 
 .form-control.success textarea {
-  background-color: var(--success-color);
+  border-color: #ffffff;
+  box-shadow: -0.2em -0.2em 2em -0.2em #ffffff;
 }
 
 .form-control.error textarea {
-  background-color: var(--error-color);
+  border-color: rgb(81, 30, 148);
+  box-shadow: -0.2em -0.2em 2em -0.2em rgb(81, 30, 148);
 }
 
 .form-control small {
