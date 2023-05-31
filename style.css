@@ -314,6 +314,11 @@ p {
   transition: background 0.2s linear;
 }
 
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  display: none;
+}
+
 .textarea {
   height: 130px;
   width: 100%;
